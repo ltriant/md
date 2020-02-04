@@ -1,0 +1,9 @@
+[package]
+name = "md"
+version = "0.1.0"
+authors = ["Luke Triantafyllidis <ltriant@cpan.org>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4.8"
+env_logger = "0.7.1"
