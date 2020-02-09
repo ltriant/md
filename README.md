@@ -6,7 +6,7 @@ A Sega Mega Drive emulator.
 
 1. Read Mega Drive docs
 2. Implement memory map for CPU
-3. -Basic ROM parsing-
+3. ~~Basic ROM parsing~~
 4. Put the right things into the right memory
 5. CPU registers
 6. CPU addressing modes
