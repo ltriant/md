@@ -71,7 +71,7 @@ fn load_cartridge(rom_path: &String) -> Result<Cartridge, io::Error> {
     fh.read(&mut header)?;
 
     debug!("Console: {}", str::from_utf8(&header[OFFSET_CONSOLE .. OFFSET_COPYRIGHT]).unwrap());
-    debug!("Domestic Name: {}", str::from_utf8(&header[OFFSET_DOMESTIC_NAME .. OFFSET_OVERSEAS_NAME]).unwrap());
+    info!("Domestic Name: {}", str::from_utf8(&header[OFFSET_DOMESTIC_NAME .. OFFSET_OVERSEAS_NAME]).unwrap());
     debug!("Overseas Name: {}", str::from_utf8(&header[OFFSET_OVERSEAS_NAME .. OFFSET_SERIAL_NO]).unwrap());
     info!("Serial No: {}", str::from_utf8(&header[OFFSET_SERIAL_NO .. OFFSET_CHECKSUM]).unwrap());
 
